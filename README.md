@@ -11,6 +11,22 @@ This project performs the following tasks:
 4. **Training Configuration:** Sets up training parameters and trains the model.
 5. **Evaluation:** Evaluates the model's performance using BLEU score.
 
+## Model Details
+
+The model used in this project is **Helsinki-NLP/opus-mt-cs-en**. This is a pre-trained sequence-to-sequence (Seq2Seq) model designed for translation from Czech (`cs`) to English (`en`).
+
+### Key Details:
+- **Model Name:** Helsinki-NLP/opus-mt-cs-en
+- **Model Type:** Sequence-to-Sequence (Seq2Seq) model
+- **Pre-trained For:** Czech to English translation
+- **Source:** Helsinki-NLP's OPUS-MT models, which are available on the Hugging Face Model Hub.
+
+### Explanation:
+- **AutoModelForSeq2SeqLM:** This class from the `transformers` library loads the pre-trained Seq2Seq model. In this case, it specifically loads the `Helsinki-NLP/opus-mt-cs-en` model.
+- **AutoTokenizer:** This class loads the tokenizer corresponding to the model. The tokenizer handles the conversion between text and tokens that the model can process.
+
+The `Helsinki-NLP/opus-mt-cs-en` model is part of the OPUS-MT project by Helsinki-NLP, which provides a variety of translation models for different language pairs based on the Marian NMT framework.
+
 ## Installation
 
 To run the code, you need to install the required libraries. You can install them using pip:
